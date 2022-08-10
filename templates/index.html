@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>융합캡스톤 1조</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+        <link href="static/css/custom_1027.css" rel="stylesheet" />
+        <link href="static/css/custom_1123.css" rel="stylesheet" />
+        <link href="static/css/custom_1123_.css" rel="stylesheet" />
+
+    </head>
+       
+    <body id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Let's Go Green </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recognize">원재료명 ocr 인식</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">More</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">Let's Go Green!</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">융합캡스톤 1조<br>권가은, 신지혜, 이미경, 조다은</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </header>
+
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">We've got what you need!</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white-50 mb-4">Let's Go Green은<br>식품의 원재료명 표를 촬영해<br>해당 상품이 사용자의 채식 단계에 적합한 제품인지<br>알려주는 서비스입니다 :)</p>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#recognize">Get Started!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- recognize Grid-->
+        <section class="page-section bg-light" id="recognize">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-center mt-0">OCR 원재료명 인식</h2>
+                    <hr class="divider my-4" />
+                        <div class="mt-4">
+                            <p class="text-muted mb-0">식품의 원재료명 표를 촬영해주세요.<br>촬영시, 가까운 거리에서 촬영해 주세요.<br></p>
+                        </div>
+                        
+                        <form id="upload" method="POST" action="{{ url_for('upload_done') }}" enctype="multipart/form-data">
+                            <!-- 채식단계select -->
+                            <div class="mt-4">
+                                <select id="type" class="custom-select" name="type">
+                                    <option selected>자신의 채식 단계를 선택해주세요.</option>
+                                    <option value="vegan">비건</option>
+                                    <option value="ovo">오보</option>
+                                    <option value="lacto">락토</option>
+                                    <option value="lactoovo">락토 오보</option>
+                                    <option value="pesco">페스코</option>
+                                    <option value="pollo">폴로/세미</option>
+                                    <input type="hidden" id = 'type' name="type" value="type">
+                                </select>
+                            </div>
+                            <!--업로드한 이미지 저장-->
+                            <div class="upload-btn-wrappe mt-4">                                
+                                <input class="btn btn-light btn-xl" type="file" value="Upload" name="image">
+                                <p></p>
+                            </div>
+                            <input class="btn btn-primary btn-xl" type="submit" value="제출">
+                        </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- More-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">                                              
+                        <a class="portfolio-box" href="https://www.google.com/search?q=%EA%B0%80%EA%B9%8C%EC%9A%B4+%EC%B1%84%EC%8B%9D+%EC%8B%9D%EB%8B%B9&oq=%EA%B0%80%EA%B9%8C%EC%9A%B4+%EC%B1%84%EC%8B%9D+%EC%8B%9D%EB%8B%B9&aqs=chrome..69i57j0i333l2.5498j0j15&sourceid=chrome&ie=UTF-8">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/a.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">든든한 한 끼!</div>
+                                <div class="project-name">가까운 채식 식당 알아보기</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://www.google.com/search?ei=cxbGX6vTHKzemAXL6ZuoDg&q=%EC%B1%84%EC%8B%9D+%EB%8B%A8%EA%B3%84&oq=%EC%B1%84%EC%8B%9D+%EB%8B%A8%EA%B3%84&gs_lcp=CgZwc3ktYWIQAzICCAAyBggAEAgQHjoFCAAQzQI6BwghEAoQoAE6BAgAEEM6CAgAELEDEIMBOgUIABCxAzoECAAQAzoECAAQCjoECAAQHlCefljVqwFgy7ABaAJwAHgAgAGBAYgB1g2SAQQwLjE1mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwjr2M2gxaztAhUsL6YKHcv0BuUQ4dUDCA0&uact=5">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/bb.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">채식을 시작하고 싶다면?</div>
+                                <div class="project-name">채식의 단계 알아보기</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://www.10000recipe.com/recipe/list.html?q=%EC%B1%84%EC%8B%9D">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/cc.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">집에서 즐기는 채식!</div>
+                                <div class="project-name">채식 레시피 알아보기</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">서비스 이용 시 궁금한 점이 있으신가요?<br>아래 연락처를 통해 개발자들에게 알려주세요!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+82 (010) 1234-5678</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <a class="d-block" href="mailto:aileen1007@ewhain.net">aileen1007@ewhain.net</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>   
+        <!--채식단계선택-->
+        <script>
+            var s = document.getElementById("type");
+            var type = s.options[s.selectedIndex].value;
+        </script>
+    
+    </body>
+</html>
