@@ -14,5 +14,14 @@
 - FE, BE 개발을 위한 프레임워크로 Flask를 사용했습니다.
 
 ### 어플리케이션 모습
+
+- index.html에서, 사용자에게 채식 단계 데이터와 원재료명 이미지를 입력 받습니다.
+- back-end에서, 입력 받은 이미지를 해당 시간을 이름으로 하여 저장합니다.
+- crop.html에서, 저장한 이미지 중 이미지 전처리에 필요한 원재료명 표 부분의 좌표를 클릭으로 입력 받습니다.
+- back-end에서, 사용자의 채식 단계 데이터와 입력 받은 이미지, 원재료명 표 좌표를 넘겨 받아 전처리, 딥러닝 OCR, 후처리, database 대조를 통해 해당 식품의 섭취 가능 여부를 판별합니다.
+- predict.html에서, 사용자에게 섭취 가능 여부를 출력하여 보여줍니다.
+
 ![그림2](https://user-images.githubusercontent.com/65700066/187595830-ff5fd5b4-b0b2-45f3-91b0-dcdc612fa3e9.png)
 <img src = "https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png" width = 600>
+![그림3](https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png)
+
