@@ -1,9 +1,7 @@
-# Lets-go-green-backup
-## 채식인을 위한 원재료명 OCR 웹 서비스 <Let’s Go Green>
+# 채식인을 위한 원재료명 OCR 웹 서비스 <Let’s Go Green>
 ---
-2020년 9월 ~ 12월 진행한 <Let’s Go Green> 프로젝트의 FE, BE 부분 백업용 레포지토리 입니다.
-
-(추후 readme 수정 예정입니다.)
+<br> 2020년 9월 ~ 12월 진행한, 융합캡스톤디자인 과목 팀 프로젝트 <Let’s Go Green> 의 FE, BE 부분 백업용 레포지토리 입니다.
+<br> (추후 readme 수정 예정입니다.)
 
 ### 프로젝트 목적
 
@@ -17,5 +15,4 @@
 
 ### 어플리케이션 모습
 ![그림2](https://user-images.githubusercontent.com/65700066/187595830-ff5fd5b4-b0b2-45f3-91b0-dcdc612fa3e9.png)
-![그림3](https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png)
-
+<img src = "https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png" width = 600>
