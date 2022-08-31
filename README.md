@@ -12,8 +12,8 @@
 해당 식품의 섭취 가능 여부를 알려주는 웹 어플리케이션입니다.
 
 ### 사용 기술
-- Python 기반의 웹 프레임워크인 Flask를 이용해 FE, BE 개발을 진행했습니다.
-- Bootstrap을 이용하여 반응형 웹으로 구성하였습니다.
+- FE 개발에 HTML, CSS, JavaScript를 사용하였고, 추가적인 화면 디자인에 Bootstrap을 이용하였습니다.
+- FE, BE 개발을 위한 프레임워크로 Flask를 사용했습니다.
 
 ### 어플리케이션 모습
 ![그림2](https://user-images.githubusercontent.com/65700066/187595830-ff5fd5b4-b0b2-45f3-91b0-dcdc612fa3e9.png)
