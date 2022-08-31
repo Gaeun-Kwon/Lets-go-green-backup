@@ -23,5 +23,3 @@
 
 ![그림2](https://user-images.githubusercontent.com/65700066/187595830-ff5fd5b4-b0b2-45f3-91b0-dcdc612fa3e9.png)
 <img src = "https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png" width = 600>
-![그림3](https://user-images.githubusercontent.com/65700066/187595851-55667c6b-9703-44aa-a786-15fcbdf088a7.png)
-
